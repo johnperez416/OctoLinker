@@ -1,7 +1,8 @@
 import escapeRegexString from 'escape-regex-string';
 import bylineParser from '@octolinker/helper-parser-byline';
 
-const DOMAIN_REGEX = /^((?=[a-z0-9-]{1,63}\.)(xn--)?[a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,63}/;
+const DOMAIN_REGEX =
+  /^((?=[a-z0-9-]{1,63}\.)(xn--)?[a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,63}/;
 const ALLOWED_DOMAINS = [
   'github.com',
   'bitbucket.org',
@@ -10,6 +11,7 @@ const ALLOWED_DOMAINS = [
   'gopkg.in',
   'golang.org',
   'k8s.io',
+  'pkg.go.dev',
 ];
 
 // For go.mod file

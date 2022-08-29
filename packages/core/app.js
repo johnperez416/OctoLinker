@@ -4,7 +4,6 @@ import insertLink from '@octolinker/helper-insert-link';
 import * as storage from '@octolinker/helper-settings';
 import helperSortUrls from '@octolinker/helper-sort-urls';
 import normaliseResolverResults from '@octolinker/helper-normalise-resolver-results';
-import notification from './notification';
 import Plugins from './plugin-manager.js';
 import debugMode from './debug-mode.js';
 import loader from './loader.js';
@@ -50,7 +49,7 @@ async function run(rootElement) {
     });
 
   // Prefetch live resolver results in background
-  (window.requestIdleCallback || setTimeout)(() => {
+  (window.requestIdleCallback || setTimeout).bind(window)(() => {
     loader(matches);
   });
 }
@@ -70,7 +69,6 @@ function watch(viewSpy) {
 
 function init() {
   debugMode(storage.get('debugMode'));
-  notification();
 
   injection(() => {
     if (!blobReader.hasBlobs()) {
