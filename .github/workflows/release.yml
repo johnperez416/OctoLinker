@@ -33,7 +33,7 @@ jobs:
         run: tar -zcvf octolinker-${{ steps.tag_name.outputs.current_version }}.tar.gz ./dist
 
       - name: Upload release to GitHub
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: octolinker-${{ steps.tag_name.outputs.current_version }}.tar.gz
 
