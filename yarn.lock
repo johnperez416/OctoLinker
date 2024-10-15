@@ -8416,10 +8416,10 @@ web-streams-polyfill@^3.0.3:
   resolved "https://registry.yarnpkg.com/web-streams-polyfill/-/web-streams-polyfill-3.2.1.tgz#71c2718c52b45fd49dbeee88634b3a60ceab42a6"
   integrity sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==
 
-webext-base-css@^1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/webext-base-css/-/webext-base-css-1.4.3.tgz#413b28bfca0e65fd42d7652fb963eedaad327191"
-  integrity sha512-LKbDiNn94MTu9Uz1MwgSLjkPIWfBAyt+xpU9Ad+6fy3A7BpxSSFVmqrvcs/6CzaTdRb+5gL1xtLVB/++DZP05g==
+webext-base-css@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/webext-base-css/-/webext-base-css-2.0.1.tgz#f0d59363226856054b1d9b949b87a6783a082e05"
+  integrity sha512-Bue3ZMO0QA2GmRqCzfC2XandI4ntnotfbF62wIBJlvyDSRTIZvw6DP4ejFlRpzi2CVPynu5dD8uFCZTMyurNpQ==
 
 webextension-polyfill@^0.10.0:
   version "0.10.0"
